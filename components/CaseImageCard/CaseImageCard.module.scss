@@ -1,0 +1,35 @@
+@import '../../styles/params';
+
+.cardContainer {
+  position: relative;
+  box-sizing: border-box;
+  &:hover {
+    .textContainer {
+      overflow: hidden;
+      opacity: 0.9;
+    }
+  }
+}
+.image {
+
+}
+
+.image img{
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  transition: all 500ms ease;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
+  background-color: $white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

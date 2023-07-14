@@ -1,0 +1,92 @@
+@import '../../styles/params';
+
+.newsHeader {
+  width: 100%;
+  height: 160px;
+  background-image: url("../../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+.contacts {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contactInfo {
+  display: flex;
+}
+
+.contactItem {
+  cursor: pointer;
+  &:hover {
+    color: $main;
+  }
+}
+
+.followInfo {
+  margin-left: 30px;
+  display: flex;
+}
+
+.languages {
+  display: flex;
+
+  .lang {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: $white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .active {
+    color: $main;
+  }
+}
+
+
+.contacts .icon {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 10px;
+  &:hover {
+    color: $main;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts {
+    justify-content: flex-end;
+  }
+  .card {
+    width: 46%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    margin: 30px auto;
+    &Title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &Text {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}

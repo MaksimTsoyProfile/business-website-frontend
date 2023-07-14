@@ -1,0 +1,100 @@
+@import '../../styles/params';
+.formWrapper {
+  margin-top: 40px;
+  background-image: url("../../public/contact-background.jpg");
+  background-size: cover;
+  color: $white;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.form {
+  width: 60%;
+}
+
+.input {
+  width: 45%;
+  box-sizing: border-box;
+  margin-right: 30px;
+  font-size: 14px;
+  color: $white;
+  background: transparent;
+  padding: 14px 0;
+  border: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid $white;
+  margin-bottom: 20px;
+  &::placeholder {
+    color: $white;
+  }
+  &:focus {
+    transition: all 250ms ease;
+    outline: none;
+    border-top: 1px solid $white;
+  }
+}
+
+.textArea {
+  box-sizing: border-box;
+  width: 94%;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px 28px;
+  background: transparent;
+  color: $white;
+  border: 1px solid $white;
+  transition: transform 250ms ease;
+  &:hover {
+    transform: scale(1.05);
+    background: $black;
+    border-color: $black;
+  }
+}
+
+.contactInfo {
+  width: 30%;
+  margin-top: 15px;
+}
+
+.title {
+  color: $white;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: $white;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+
+@media  (max-width: 768px) {
+  .input {
+    width: 90%;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media  (max-width: 576px) {
+  .form {
+    width: 100%;
+  }
+}

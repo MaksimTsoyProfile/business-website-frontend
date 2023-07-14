@@ -1,0 +1,26 @@
+.news {
+  padding-top: 80px;
+}
+
+.titleContainer {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 576px) {
+  .titleContainer {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}

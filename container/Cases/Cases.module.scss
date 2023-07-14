@@ -1,0 +1,43 @@
+.cases {
+  padding-top: 80px;
+}
+
+.titleContainer {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 32%;
+  //height: 214px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    //height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+  .titleContainer {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../styles/params';
+
+.cardContainer {
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 5px;
+  &:hover {
+    .iconContainer {
+      opacity: 0.9;
+    }
+  }
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;
+  opacity: 0;
+  color: $main;
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  display: flex;
+  color: $grey;
+  font-size: 11px;
+  margin-bottom: 10px;
+  &Date {
+    padding: 0 5px;
+  }
+}
+
+
+.title {
+  margin-bottom: 10px;
+}
+
+.text {
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* количество строк */
+  -webkit-box-orient: vertical;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    color: $main;
+    .moreText {
+      color: $main;
+    }
+  }
+  .moreText {
+    font-size: 17px;
+    color: $black;
+    margin-right: 10px;
+    line-height: normal;
+    font-weight: 300;
+  }
+}
+
+@media  (max-width: 768px) {
+  .image img {
+    height: 240px;
+  }
+}

@@ -1,0 +1,96 @@
+@import '../../styles/params';
+
+.navigationContainer {
+  background: $greyBg;
+  padding: 10px 0;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+  margin: 0 -15px;
+}
+
+.active {
+  background: $greyBg;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  margin: 0;
+  transition: all 250ms ease;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  padding-left: 30px;
+  max-width: 210px;
+}
+
+.navItemsContainer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navItem {
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $black;
+  .link {
+    color: $black;
+    &:hover {
+      color: $main;
+    }
+  }
+  .activeNav {
+    color: $main;
+  }
+}
+
+.actionButton {
+  cursor: pointer;
+  justify-self: right;
+  text-transform: uppercase;
+  color: $white;
+  background: $main;
+  padding: 20px 28px;
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    margin: 0 20px;
+  }
+  .actionButton {
+    justify-self: right;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .logo img {
+    padding-left: 10px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    padding-left: 10px;
+    max-width: 100px;
+  }
+  .active {
+    display: none;
+  }
+}

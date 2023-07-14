@@ -1,0 +1,149 @@
+@import "../../styles/params";
+
+.headerContainer {
+  position: relative;
+}
+
+
+.imageContainer {
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  background-image: url("../../public/background.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+.contacts {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contactInfo {
+  display: flex;
+}
+
+.contactItem {
+  cursor: pointer;
+  &:hover {
+    color: $main;
+  }
+}
+
+.followInfo {
+  margin-left: 30px;
+  display: flex;
+}
+
+.languages {
+  display: flex;
+  .lang {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: $white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .active {
+    color: $main;
+  }
+}
+
+
+.contacts .icon {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 10px;
+  &:hover {
+    color: $main;
+  }
+}
+
+.content {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  color: $white;
+  text-align: center;
+  &Title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &Text {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px;
+  cursor: pointer;
+  border: 1px solid $white;
+  &:hover {
+    color: $main;
+    border-color: $main;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 32%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts {
+    justify-content: flex-end;
+  }
+  .card {
+    width: 46%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    margin: 30px auto;
+    &Title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &Text {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}

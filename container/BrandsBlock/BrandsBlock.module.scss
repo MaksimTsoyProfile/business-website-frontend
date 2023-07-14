@@ -1,0 +1,39 @@
+@import '../../styles/params';
+
+.brands {
+  margin-top: 60px;
+}
+
+.brandsContainer {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  border-top: 1px solid $borderGrey;
+  border-bottom: 1px solid $borderGrey;
+}
+
+.brandItem {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  width: 130px;
+  filter: grayscale(100%);
+  img {
+    width: 100%;
+  }
+  &:hover {
+    filter: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .brands {
+    margin-top: 30px;
+  }
+  .brandsContainer {
+    padding: 20px 0;
+  }
+  .brandItem {
+    width: 60px;
+  }
+}

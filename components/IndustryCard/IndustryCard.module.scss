@@ -1,0 +1,23 @@
+@import '../../styles/params';
+
+.cardContainer {
+  background-color: $white;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    color: $main;
+  }
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.textContainer {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

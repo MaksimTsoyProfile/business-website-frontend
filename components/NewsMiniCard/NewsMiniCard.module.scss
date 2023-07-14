@@ -1,0 +1,29 @@
+@import '../../styles/params';
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.image img {
+  width: 90px;
+  height: 90px;
+}
+
+.image {
+  margin-right: 5px;
+}
+
+.title {
+  color: $black;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.date {
+  color: $grey;
+  font-size: 12px;
+  line-height: 12px;
+}

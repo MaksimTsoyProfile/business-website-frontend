@@ -1,0 +1,116 @@
+@import "../../styles/params";
+
+.footer {
+  margin-top: 60px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $borderGrey;
+}
+
+.footerContent {
+  width: 40%;
+  &Logo img{
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  &Text {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &Icons {
+    display: flex;
+    color: $grey;
+    .icon {
+      display: block;
+      margin-right: 10px;
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}
+
+.footerTitle {
+  margin-bottom: 14px;
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: $main;
+  }
+}
+
+.footerServices {
+  width: 25%;
+  &Links {
+    display: flex;
+    flex-direction: column;
+    color: $grey;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    //.link {
+    //  cursor: pointer;
+    //  &:hover {
+    //    color: $main;
+    //  }
+    //}
+  }
+}
+
+.footerContacts {
+  width: 25%;
+  &Info {
+    display: flex;
+    flex-direction: column;
+    color: $grey;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    .phone {
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+}
+
+.authors {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $grey;
+  padding: 10px 0;
+
+  span {
+    color: $main;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+  .footerContent {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footerServices {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footerContacts {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

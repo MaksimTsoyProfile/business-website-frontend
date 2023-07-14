@@ -1,0 +1,27 @@
+@import '../../styles/params';
+
+.stat {
+  background: $main;
+  margin-top: 60px;
+  color: $white;
+}
+
+.statContainer {
+  display: flex;
+  padding: 60px 0;
+  justify-content: space-around;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.statName {
+  font-size: 14px;
+}

@@ -1,0 +1,80 @@
+@import '../../styles/params';
+
+.textContainer {
+}
+
+.colorChange {
+  cursor: pointer;
+  &:hover {
+    color: $main;
+  }
+}
+
+.black {
+  color: $black;
+}
+
+.grey {
+  color: $grey;
+}
+
+.large {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.medium {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .large {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .medium {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .small {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .large {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .medium {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .small {
+    font-size: 11px;
+    line-height: 19px;
+  }
+}

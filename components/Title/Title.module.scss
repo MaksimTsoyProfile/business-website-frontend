@@ -1,0 +1,11 @@
+@import '../../styles/params';
+
+.subtitle {
+  margin: 10px 0;
+}
+
+.highLighter {
+  width: 100px;
+  height: 5px;
+  background-color: $main;
+}

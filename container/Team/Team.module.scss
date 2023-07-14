@@ -1,0 +1,36 @@
+.team {
+  padding-top: 80px;
+}
+
+.titleContainer {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 23%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 46%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+  .titleContainer {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
