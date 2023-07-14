@@ -45,7 +45,6 @@ const FormBlock = ({
               message,
             }
           };
-          sendMessage(body);
       })
         .then(() => {
           clearForm();
