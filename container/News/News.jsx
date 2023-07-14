@@ -82,7 +82,7 @@ const News = ({
                   <div className={styles.card}>
                     <NewsCard
                       newsId={card.id}
-                      url={card.imageUrl}
+                      url='image4.jpeg'
                       date={card.date}
                       title={card.title}
                       text={card.text}

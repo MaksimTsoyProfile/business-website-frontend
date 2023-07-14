@@ -49,7 +49,7 @@ const Team = ({
             cards.map((card) => (
               <div className={styles.card} key={card.id}>
                 <TeamCard
-                  url={card.imageUrl}
+                  url='teamImage2.jpeg'
                   fullName={card.fullName}
                   position={card.position}
                   facebookLink={card.facebookLink}

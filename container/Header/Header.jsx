@@ -115,7 +115,7 @@ const Header = ({
               <div className={styles.contactInfo}>
                 <div className={styles.contactItem}>
                   <FaEnvelope size={10} />
-                  <span style={{margin: '0 30px 0 10px'}}>{mainData.email}</span>
+                  <span style={{margin: '0 30px 0 10px'}}>{'example.com'}</span>
                 </div>
                 <div className={styles.contactItem}>
                   <span>{t('Call us')}</span>

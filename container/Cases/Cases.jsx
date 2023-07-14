@@ -46,7 +46,7 @@ const Cases = ({
             cards.map((card) => (
               <div className={styles.card} key={card.id}>
                 <CaseImageCard
-                  url={card.imageUrl}
+                  url='image2.jpeg'
                   hoverTitle={card.title}
                   hoverText={card.text}
                 />

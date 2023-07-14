@@ -44,7 +44,7 @@ const NewsBlog = ({
                 <NewsMiniCard
                   title={card.title}
                   date={card.date}
-                  imageUrl={card.imageUrl}
+                  imageUrl='image4.jpeg'
                 />
               </div>
             ))

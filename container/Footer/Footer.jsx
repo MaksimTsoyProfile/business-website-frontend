@@ -81,7 +81,7 @@ const Footer = ({
             <div className={styles.footerContactsInfo}>
               <div className={styles.phone}>{mainData.phoneNumber}</div>
               <div className={styles.address}>{mainData.address}</div>
-              <div className={styles.link}>{mainData.email}</div>
+              <div className={styles.link}>{'example.com'}</div>
             </div>
           </div>
         </div>
